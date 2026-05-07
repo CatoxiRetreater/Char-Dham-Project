@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Char Dham Intelligence Dashboard — Professional Theme
+   ========================================================================== */
+
+/* ---------- Global Reset ---------- */
+[data-testid="stAppViewContainer"] {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+[data-testid="stSidebar"] {
+    background-color: #111318;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h2,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3 {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+/* ---------- Metric Cards (native st.metric) ---------- */
+[data-testid="stMetric"] {
+    background: #1a1d23;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+[data-testid="stMetric"] label {
+    color: #94a3b8 !important;
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #f1f5f9 !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+    font-size: 0.75rem !important;
+}
+
+/* ---------- Tabs ---------- */
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+    gap: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-testid="stTabs"] [data-baseweb="tab"] {
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+[data-testid="stTabs"] [aria-selected="true"] {
+    color: #3b82f6 !important;
+    border-bottom-color: #3b82f6 !important;
+    background: transparent !important;
+}
+
+/* ---------- Expanders ---------- */
+[data-testid="stExpander"] {
+    background: #1a1d23;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+[data-testid="stExpander"] summary {
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+/* ---------- Dataframes ---------- */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ---------- Download buttons ---------- */
+[data-testid="stDownloadButton"] button {
+    background: #1e293b;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #e2e8f0;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+[data-testid="stDownloadButton"] button:hover {
+    background: #334155;
+    border-color: #3b82f6;
+}
+
+/* ---------- Select boxes & Sliders ---------- */
+[data-testid="stSelectbox"] label,
+[data-testid="stSlider"] label,
+[data-testid="stCheckbox"] label,
+[data-testid="stNumberInput"] label {
+    color: #cbd5e1 !important;
+    font-weight: 500 !important;
+    font-size: 0.82rem !important;
+}
+
+/* ---------- Divider ---------- */
+[data-testid="stMarkdownContainer"] hr {
+    border-color: rgba(255,255,255,0.06);
+    margin: 24px 0;
+}
+
+/* ---------- Page header helper ---------- */
+.page-header {
+    margin-bottom: 8px;
+}
+
+.page-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 4px;
+}
+
+.page-header p {
+    color: #94a3b8;
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+/* ---------- Status dot ---------- */
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.status-dot.green  { background: #22c55e; }
+.status-dot.amber  { background: #f59e0b; }
+.status-dot.red    { background: #ef4444; }
+.status-dot.blue   { background: #3b82f6; }
+
+/* ---------- Section labels ---------- */
+.section-label {
+    color: #64748b;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ---------- Compact info card (for sidebar weather etc.) ---------- */
+.info-card {
+    background: #1a1d23;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    font-size: 0.82rem;
+    color: #cbd5e1;
+}
+
+.info-card .label {
+    color: #64748b;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.info-card .value {
+    color: #f1f5f9;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ---------- Alert severity colors (used on native components) ---------- */
+.severity-critical { color: #ef4444; }
+.severity-high     { color: #f97316; }
+.severity-moderate { color: #f59e0b; }
+.severity-low      { color: #22c55e; }
+
+/* ---------- Metric card hover effect ---------- */
+[data-testid="stMetric"]:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.08);
+    transition: all 0.25s ease;
+}
+
+/* ---------- Progress bar styling ---------- */
+[data-testid="stProgress"] > div > div > div {
+    border-radius: 6px;
+}
+
+/* ---------- Filter bar ---------- */
+[data-testid="stMultiSelect"],
+[data-testid="stSelectbox"] {
+    margin-bottom: 4px;
+}
+
+/* ---------- Hide Streamlit footer / menu ---------- */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }

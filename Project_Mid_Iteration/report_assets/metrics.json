@@ -1,0 +1,24 @@
+{
+  "rf_rmse": 6169.2891855202015,
+  "rf_mae": 3533.019288736729,
+  "rf_r2": 0.976645132918808,
+  "rf_cv_mean": 0.9719863414513294,
+  "rf_cv_std": 0.003455358451314075,
+  "total_records": 1008,
+  "year_min": 2005,
+  "year_max": 2025,
+  "total_pilgrims": 34001168,
+  "avg_pilgrims": 33731,
+  "max_pilgrims": 150241,
+  "avg_temp": 6.347321428571428,
+  "avg_rain": 129.98284722222223,
+  "features_used": [
+    "Month",
+    "Avg_Temperature_C",
+    "Rainfall_mm",
+    "Relative_Humidity_%",
+    "Wind_Speed_mps",
+    "Peak_Season",
+    "Carrying_Capacity"
+  ]
+}
